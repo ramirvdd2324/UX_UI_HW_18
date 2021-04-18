@@ -38,3 +38,103 @@ footer ul {
     display: inline-block;
     vertical-align: top;
 }
+
+.flexContainer {
+    display: flex;
+    align-items: center;
+}
+
+.card1 {
+    padding: 100px;
+    border-style: solid;
+    border-color: #373738;
+    margin: 3px;
+}
+
+
+.card2 {
+    padding: 100px;
+    border-style: solid;
+    border-color: #373738;
+    margin: 3px;
+}
+
+.card3 {
+    padding: 100px;
+    border-style: solid;
+    border-color: #373738;
+    margin: 3px;
+}
+
+.workGrid {
+    display: grid;
+    margin: 0;
+    padding: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "imgPlace1" "rightcardContent1"
+    "imgPlace2" "rightcardContent2"
+    "imagePlace3" "rightcardContent3";
+}
+
+.rightcardContent1 {
+    border-style: solid;
+    border-color: #373738;
+    padding: 50px;
+    margin: 3px;
+}
+
+.rightcardContent2 {
+    border-style: solid;
+    border-color: #373738;
+    padding: 50px;
+    margin: 3px;
+}
+
+.rightcardContent3 {
+    border-style: solid;
+    border-color: #373738;
+    padding: 50px;
+    margin: 3px;
+}
+
+.imgPlace1 {
+    border-style: solid;
+    border-color: #373738;
+    padding: 50px;
+    margin: 3px;
+}
+
+.imgPlace2 {
+    border-style: solid;
+    border-color: #373738;
+    padding: 50px;
+    margin: 3px;
+}
+
+.imgPlace3 {
+    border-style: solid;
+    border-color: #373738;
+    padding: 50px;
+    margin: 3px;
+}
+
+@media only screen and (max-width: 600){
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .card1 {
+        width: 100%;
+    }
+
+    .card2 {
+        width: 100%;
+    }
+
+    .card3 {
+        width: 100%;
+    }
+
+}
